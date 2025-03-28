@@ -73,8 +73,8 @@ document.getElementById("join").addEventListener("click", registrarPlayer);
 
 
 socket.on("notificar-dia", (data) => {
-    document.getElementById('player_app').style.backgroundColor = 'white';
-    document.getElementById('player_app').style.color = 'black';
+    document.getElementById('body').style.backgroundColor = 'white';
+    document.getElementById('body').style.color = 'black';
     if (rolPlayer === "lobo") {
         document.getElementById("register").style.display = "none";
         document.getElementById("screen-player").innerHTML = `
@@ -113,8 +113,8 @@ socket.on("notificar-dia", (data) => {
 });
 
 socket.on("notificar-noche", (data) => {
-    document.getElementById('player_app').style.backgroundColor = 'black';
-    document.getElementById('player_app').style.color = 'white';
+    document.getElementById('body').style.backgroundColor = 'black';
+    document.getElementById('body').style.color = 'white';
     if (rolPlayer === "lobo") {
         document.getElementById("register").style.display = "none";
         document.getElementById("screen-player").innerHTML = `
