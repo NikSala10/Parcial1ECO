@@ -1,0 +1,34 @@
+## install REST Client extension or humao.rest-client to execute this
+
+POST http://localhost:5051/join-game 
+Content-Type: application/json
+
+{
+    "message": "Example"
+}
+
+### 
+
+GET  http://localhost:5051/join-game 
+Content-Type: application/json
+
+{
+    "message": "Example"
+}
+### 
+
+POST  http://localhost:5051/notificar-dia
+Content-Type: application/json
+
+{
+    "message": "Example"
+}
+
+### 
+
+POST  http://localhost:5051//notificar-noche
+Content-Type: application/json
+
+{
+    "message": "Example"
+}
